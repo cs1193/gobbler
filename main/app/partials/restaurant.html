@@ -1,0 +1,32 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="col-md-2"  id="section-title">
+			RESTAURANT
+		</div>
+		<div class="col-md-10" id="section-header">
+			<i class="fa fa-angle-double-right"></i>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12" id="gallery">
+		<div class="slider">
+
+			<!-- enumerate all photos -->
+			<img ng-repeat="photo in photos" class="slide" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="isActive($index)" ng-src="{{photo.src}}" />
+
+			<!-- prev / next controls -->
+			<a class="arrow prev" href="javascript:void(0)" ng-click="showPrev()"><i class="fa fa-chevron-left"></i></a>
+			<a class="arrow next" href="javascript:void(0)" ng-click="showNext()"><i class="fa fa-chevron-right"></i></a>
+
+			<!-- extra navigation controls -->
+			<ul class="nav">
+				<li ng-repeat="photo in photos" ng-class="{'active':isActive($index)}">
+					<img ng-src="{{photo.src}}" alt="{{photo.desc}}" title="{{photo.desc}}" ng-click="showPhoto($index);" />
+				</li>
+			</ul>
+
+		</div>
+
+	</div>
+</div>

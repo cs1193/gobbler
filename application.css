@@ -1,0 +1,94 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require bootstrap
+ *= require bootstrap.min
+ *= require font-awesome
+ *= require ngProgress
+ *= 
+ */
+
+	.howler {
+		margin: 0 .75em 1em 0;
+	}
+
+.fb-icon-bg {
+	background: #354f88;
+	height: 37px;
+	margin: 0 2px -37px 2px;
+	width: 98%;
+}
+
+.fb-icon-bg:after {
+	content: url(https://dl.dropboxusercontent.com/u/54149043/CssDeck/fb-icon.png);
+	display: block;
+	padding: 9px 10px 5px 15px;
+}
+
+.fb-bg {
+	background: #3b5998;
+	display: block;
+	height: 37px;
+	margin: 0 0 30px 41px;
+	width: 100%;
+}
+
+.fb-bg:after {
+	color: #fff;
+	content: "sign in with facebook";
+	font-family: 'Oswald', sans-serif;
+	height: 37px;
+	left: 8%;
+	position: relative;
+	text-transform: uppercase;
+	top: 22%;
+	width: 41px;
+}
+
+.fb-bg:hover {
+	cursor: pointer;
+}
+
+.fb-bg:active {
+	background: #354f88;
+}
+.g-icon-bg {
+	background: #ce3e26;
+	height: 37px;
+	margin: 0 2px -37px 2px;
+	width: 98%;
+}
+
+.g-bg {
+	background: #de4c34;
+	height: 37px;
+	margin-left: 41px;
+	width: 100%;
+}
+
+.g-bg:after {
+	color: #fff;
+	content: "sign in with google+";
+	font-family: 'Oswald', sans-serif;
+	height: 37px;
+	left: 10%;
+	position: relative;
+	text-transform: uppercase;
+	top: 22%;
+	width: 41px;
+}
+
+.g-bg:hover {
+	cursor: pointer;
+}
+
+.g-bg:active {
+	background: #ce3e26;
+}
